@@ -3,10 +3,6 @@ pragma solidity ^0.8.17;
 import {IERC20} from "./interface.sol";
 import "../lib/openzeppelin-contracts/contracts/access/Ownable.sol";
 
-//users stake stakableTokens
-//user get 20% APY CVIII as reward;
-// token ratio 1: 1
-
 contract StakERC20 is Ownable {
     IERC20 public rewardToken;
     IERC20[] public stakableTokens;
